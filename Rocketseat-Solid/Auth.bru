@@ -1,0 +1,18 @@
+meta {
+  name: Auth
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{host}}/sessions
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "bruno@gmail.com",
+    "password": "123456"
+  }
+}
